@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*导航栏的样式*/
+.top{
+    position: relative;
+    background: #363636;
+    height:50px;
+    padding:5px 20px;
+}
+
+/*使用绝对定位使标题垂直居中*/
+#title{
+    position: absolute;
+    margin-left: 20px;
+    padding-left: 20px;
+    color:white;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 0.8em;
+}
+
+.nav{
+    position: absolute;
+    right:20px;
+    top:50px;
+    transform: translateY(-50%);
+}
+
+.nav ul li{
+    float: left;
+    margin: 0px 15px;
+    font-weight: bold;
+}
+/*下面三个是设置导航链接样式*/
+.nav ul li a:link{
+    text-decoration: none;
+    color:gray;
+}
+
+.nav ul li a:visited{
+    text-decoration: none;
+    color:gray;
+}
+
+.nav ul li a:hover{
+    text-decoration: none;
+    color:white;
+}
+
+.container{
+    position: absolute;
+    background: gainsboro;
+    padding: 20px;
+}
+
+#content{
+    overflow: auto;
+    margin-bottom: -20px;
+}
+
+.solid-border{
+    border-style: solid;
+    border-width: 1px 3px 3px 1px;
+    border-color: darkgray;
+}
+
+.article{
+    background: white;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+/*文章样式*/
+.article h2{
+    line-height: 2em;
+}
+
+.article h3{
+    color:gray;
+    line-height: 2em;
+}
+
+p.author{
+    color:gray;
+    font-size: 0.8em;
+    line-height: 3em;
+}
+
+p.content{
+    text-indent: 2em;
+    line-height: 2em;
+    letter-spacing: 1px;
+}
+
+.article ul{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.article ul li{
+    margin: 5px 0px;
+}
+
+.pictures{
+    display: inline-block;
+    padding: 10px;
+}
+
+.picture img{
+    height:75px;
+    width:100px;
+    margin-top: 10px;
+    display:block;/*消除img标签与div层之间的空隙*/
+}
+
+ol>li{
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+table{
+    width: 99%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table th{
+    background: black;
+    color:white;
+    padding: 5px;
+    border:1px lightgray solid;
+}
+
+table td{
+    background: white;
+    padding: 5px;
+    border:1px lightgray solid;
+}
+
+table td.total{
+    background: lightgray;
+    font-weight: bold;
+}
+
+
+/*侧栏*/
+#side{
+    float:right;
+    background: white;
+    margin-left: 20px;
+    padding: 10px 20px;
+    width: 30%;
+}
+
+#side h2{
+    display: inline-block;
+    padding: 5px 20px;
+    border-left: 3px lightgray solid;
+    font-size: 1em;
+    line-height: 2em;
+    margin-bottom: 5px;
+}
+
+#side div.line{
+    line-height: 2em;
+}
+
+#side .prompt{
+    display: inline-block;
+    width: 30%;
+    padding-right: 3px;
+    text-align: right;
+    font-size: 0.8em;
+    vertical-align: top;
+}
+
+#side input{
+    margin-left: 10px;
+    padding: 3px;
+    font-size: 0.8em;
+}
+
+#side select{
+    margin-left: 10px;
+    padding: 3px;
+}
+
+#side textarea{
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 10px;
+    padding: 0px 3px;
+}
+
+#sidebar .submitDiv{
+    text-align: center;
+}
+
+#submitBtn{
+    background: royalblue;
+    color: white;
+    width: 95%;
+    height: 40px;
+    margin:20px 0px;
+    border-radius: 10px;
+    border: 2px gray solid;
+}
+
+
+
+/*底部栏*/
+
+.bottom{
+    background: #1C1C1C;
+    height: 40px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
